@@ -1,0 +1,42 @@
+/* stylelint-disable at-rule-no-unknown */
+
+/* 1. Tailwind core styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Simple reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Add this line */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 3. Your theme variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* 4. Base body styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* force white background */
+  color: #000000;             /* force black text */
+}
