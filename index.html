@@ -1,1 +1,170 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Telecom — Customer Support</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Fast networks, simple plans, clear support." />
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="topbar">
+      <div class="brand">
+        <img
+          src="logo.png"
+          alt="Your Telecom"
+          width="140"
+          height="40"
+          class="brandLogo"
+        />
+        <span class="brandText">Customer Support</span>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#" class="navLink">Mobile</a>
+        <a href="#" class="navLink">Internet</a>
+        <a href="#" class="navLink">Bundles</a>
+        <a href="#" class="navLink">Support</a>
+      </nav>
+
+      <div class="actions">
+        <a href="tel:+1234567890" class="callButton">Call us</a>
+        <a href="#" class="signIn">Sign in</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="heroContent">
+        <h1 class="heroTitle">Fast networks. Simple plans. Clear support.</h1>
+        <p class="heroSubtitle">
+          Choose a plan that fits your life. Get help when you need it.
+        </p>
+        <div class="heroCtas">
+          <a href="#" class="primaryCta">Shop mobile</a>
+          <a href="#" class="secondaryCta">Shop home internet</a>
+        </div>
+        <div class="heroHelp">
+          Prefer to talk or have a query?&nbsp;&nbsp;
+          <a href="tel:+1234567890" class="phoneLink">Call us</a>
+        </div>
+      </div>
+
+      <div class="heroImageWrap" aria-hidden="true">
+        <img
+          src="iphone17.jpeg"
+          alt="iPhone 17 in three colors"
+          width="544"
+          height="304"
+          class="heroImage"
+        />
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section class="section">
+      <h2 class="sectionTitle">Popular mobile plans</h2>
+      <div class="cardGrid">
+        <article class="card">
+          <h3>Basic Plan</h3>
+          <p class="price">$25/mo</p>
+          <ul class="list">
+            <li>20 GB data</li>
+            <li>Unlimited calls and SMS</li>
+            <li>No lock-in</li>
+          </ul>
+          <a href="#" class="cardCta">Choose Basic</a>
+        </article>
+
+        <article class="card">
+          <h3>Plus Plan</h3>
+          <p class="price">$45/mo</p>
+          <ul class="list">
+            <li>60 GB data</li>
+            <li>5G access</li>
+            <li>Hotspot included</li>
+          </ul>
+          <a href="#" class="cardCta">Choose Plus</a>
+        </article>
+
+        <article class="card">
+          <h3>Max Plan</h3>
+          <p class="price">$65/mo</p>
+          <ul class="list">
+            <li>150 GB data</li>
+            <li>5G priority</li>
+            <li>International minutes</li>
+          </ul>
+          <a href="#" class="cardCta">Choose Max</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Support tiles -->
+    <section class="sectionAlt">
+      <h2 class="sectionTitle">Support</h2>
+      <div class="tileGrid">
+        <a href="#" class="tile">
+          <h3>Track order</h3>
+          <p>See where your order is right now.</p>
+        </a>
+        <a href="#" class="tile">
+          <h3>Outages</h3>
+          <p>Check service status in your area.</p>
+        </a>
+        <a href="#" class="tile">
+          <h3>Manage account</h3>
+          <p>View bills and recharge.</p>
+        </a>
+        <a href="#" class="tile">
+          <h3>Contact us</h3>
+          <p>Message, call or email us right now.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footerInner">
+      <div class="footerCols">
+        <div>
+          <h4>Shop</h4>
+          <a href="#">Mobile</a>
+          <a href="#">Internet</a>
+          <a href="#">Accessories</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Help centre</a>
+          <a href="#">Track order</a>
+          <a href="#">Outages</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="legalRow">
+        <p>&copy; <span id="year"></span> Your Telecom Services. All rights reserved.</p>
+        <div class="legalLinks">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
